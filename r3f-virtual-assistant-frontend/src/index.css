@@ -1,0 +1,122 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --leva-sizes-rootWidth: 340px;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  background-color: #bea8fa;
+  background-image: linear-gradient(19deg, #c1a8fa 0%, #ddd6f3 100%);
+}
+
+body.greenScreen {
+  background-color: #00ff00;
+  background-image: none;
+}
+
+
+.avatar-corner {
+  position: absolute;
+  top:100;
+  bottom: 0;
+  left: 850;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.avatar-canvas {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none;
+}
+
+/* Make the parent fill the viewport and stack children */
+.page-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* 1) Video sits at the very back, full‐screen */
+.video-layer {
+  position: absolute;
+  top: 0 ; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: all;
+}
+
+
+/* 3) UI on top of everything */
+.ui-layer {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+
+
+.avatar-corner {
+  position: absolute;
+  top: 100px;
+  left: 850px;
+  width: 640px;       /* fixed width for Amanda */
+  height: 720px;      /* fixed height for Amanda */
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.avatar-canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  pointer-events: all;
+
+}
+
+.avatar-corner {
+  position: absolute;
+  top: 0;
+  left: 850;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.avatar-canvas {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.avatar-corner {
+  position: absolute;
+  top: 0;
+  left: 0; /* ❗️DO NOT set this to 850px */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}

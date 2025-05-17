@@ -1,0 +1,31 @@
+/* File: src/components/Bubble.css */
+
+.assistant-bubble {
+  position: absolute;
+  top: 100px;  /* Adjust to position next to the head */
+  left: 5px;   /* Adjust based on your layout */
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 50px 10px;
+  border-radius: 0px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transform-origin: left center;
+  animation: bubbleExpand 0.5s ease-out forwards;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@keyframes bubbleExpand {
+  0% {
+      transform: scale(0);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1.1);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1);
+  }
+}

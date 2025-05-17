@@ -1,0 +1,44 @@
+{
+  "name": "r3f-virtual-girlfriend-backend",
+  "version": "1.0.0",
+  "description": "Backend for the virtual Assistant app",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js --ext js"
+  },
+  "author": "Wawa SENSEI <contact@wawasensei.dev>",
+  "dependencies": {
+    "@babylonjs/core": "^5.57.1",
+    "@babylonjs/loaders": "^5.57.1",
+    "@google-cloud/text-to-speech": "^6.0.1",
+    "@pixiv/three-vrm": "^3.4.0",
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.13.3",
+    "@vitejs/plugin-react": "^4.4.1",
+    "babylon-vrm-loader": "^2.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "elevenlabs-node": "^1.2.0",
+    "express": "^4.21.2",
+    "form-data-encoder": "^4.0.2",
+    "formdata-node": "^6.0.3",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.97.0",
+    "path": "^0.12.7",
+    "postprocessing": "^6.37.3",
+    "rhubarb-lip-sync": "^0.0.1-alfa-3",
+    "three": "^0.153.0",
+    "three-mmd-loader": "^0.0.11",
+    "three-stdlib": "^2.36.0",
+    "vite": "^6.3.5",
+    "vrm-helper": "^1.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "keywords": [],
+  "license": "ISC"
+}
